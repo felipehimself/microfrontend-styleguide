@@ -3,15 +3,15 @@
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",
+  "module": "./index.js",
   "exports": {
     ".": {
-      "import": "./index.mjs",
-      "require": "./index.js"
+      "import": "./modules/styleguide.mjs",
+      "require": "./commonjs/styleguide.js",
+      "types": "./index.d.ts"
     }
   },
   "peerDependencies": {
-    "@mui/material": "^5.15.0",
-    "@emotion/react": "11.11.1",
-    "@emotion/styled": "11.11.0"
+    "@fluentui/react-components": "^9.51.1"
   }
 }

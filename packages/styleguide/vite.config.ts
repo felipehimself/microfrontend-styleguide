@@ -40,7 +40,25 @@ export default defineConfig({
           entryFileNames: 'system/styleguide.js',
           inlineDynamicImports: false,
         },
+
+        {
+          format: 'cjs',
+          entryFileNames: 'commonjs/styleguide.cjs',
+          inlineDynamicImports: false,
+        },
+        {
+          format: 'es',
+          entryFileNames: 'modules/styleguide.mjs',
+          inlineDynamicImports: false,
+        },
+        {
+          format: 'umd',
+          name: 'styleguide',
+          entryFileNames: 'umd/styleguide.js',
+          inlineDynamicImports: false,
+        },
       ],
+
       external: ['react', 'react-dom', 'react/jsx-runtime'],
     },
   },

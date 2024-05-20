@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "sb": "nx run mfe-lib:storybook"
+    "sb": "nx run mfe-lib:storybook",
+    "styleguide:preview": "npx nx run styleguide:preview"
   },
   "private": true,
   "dependencies": {
